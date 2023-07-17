@@ -1,0 +1,251 @@
+/* GENERAL */
+a {
+  text-decoration: none;
+}
+
+.bg-principal {
+  background-color: #d87524;
+}
+
+.mt-2 {
+  margin-top: 20px;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
+}
+
+.ml-2 {
+  margin-left: 20px;
+}
+
+.mr-2 {
+  margin-right: 20px;
+}
+
+.pb-40{
+  padding-bottom: 40px !important;
+}
+
+
+body {
+  font-family: "Tahoma" !important;
+  color: black;
+}
+
+/* HEADER */
+
+.btnSearch {
+  background-color: #d87524;
+  color: black;
+  border-color: black;
+  transition: all 0.5s;
+}
+.btnProductos{
+  background-color: #ffaf1c;
+  color: black;
+  border-color: black;
+  transition: all 0.5s;
+}
+.btn:hover {
+  color: black;
+  border-color: black;
+  background-color: rgb(100, 100, 100);
+}
+nav ul li:hover,.hoverHeader:hover {
+  background-color: #a0561a;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+/* MAIN */
+
+main div .infoHistoria {
+  border: double black;
+}
+main .img-productos {
+  border-radius: 0.5rem;
+  width: 200px;
+  height: auto;
+}
+main img {
+  border-radius: 0.5rem;
+}
+main h2 {
+  color: rgb(30, 33, 37);
+}
+main h1:hover, .h2Hover:hover {
+  background-color: rgb(252, 174, 57);
+  transition: all 0.3s;
+  border-radius: 0.5rem;
+}
+
+.inputUnidades{
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #ffff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.375rem;
+}
+
+.bg-imgMain {
+  background-image: url(../img/fondoMain.jpg);
+}
+.btnEliminar, .btnRestar, .btnSumar{
+  color: black;
+  border-color: black;
+  transition: all 0.5s;
+}
+.btnEliminar{
+  position: relative;
+  right: 40px;
+}
+.btnRestar{
+  position: relative;
+  right: 12px;
+}
+.btnSumar{
+  position: relative;
+  left: 12px;
+}
+.cantidadEnCarrito{
+  position: relative;
+  top: 7px;
+}
+
+.aEnlaces {
+  color: rgb(209, 117, 4);
+}
+.aEnlaces:hover {
+  border-bottom: solid rgb(73, 72, 72);
+  border-top: solid rgb(73, 72, 72);
+  transition: all 0.1s;
+}
+.textoContacto{
+  position: relative;
+  left: 320px;
+}
+.formContacto{
+  background-color: rgb(115, 115, 115, 0.5);
+  position: relative;
+  left: 180px;
+  border: solid #212529;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.8, 0.8);
+  }
+  25% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(0.8, 0.8);
+  }
+  75% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(0.8, 0.8);
+  }
+}
+
+.img-pedidosYa {
+  animation-name: zoom;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+
+@media only screen and (max-width: 600px) {
+  .productos div{
+    margin-top: 15px;
+  }
+} 
+
+/* FOOTER */
+
+footer {
+  margin: 0 !important;
+  width: 100% !important;
+}
+.textoGratis{
+  color: #7afc19;
+}
+.ocultar{
+  display: none;
+}
+
+/* DESKTOP */
+
+@media only screen and (min-width: 1023px) {
+  .buscador {
+    transform: translate(90px, -30px);
+  }
+  .navbar-nav{
+    position: relative;
+    right: 190px;
+  }
+  .navbarProductos{
+    position: relative;
+    left: 6px;
+  }
+  .img-user {
+    transform: translate(-195px, 33px);
+    position: absolute;
+  }
+  .img-carrito{
+    transform: translate(-125px, 33px);
+    position: absolute;
+  }
+  .img-user:hover, .img-carrito:hover, .img-carritoProductos:hover, .img-userProductos:hover {
+    transition: all 0.5s;
+      background-color: rgba(51, 51, 51, 0.6);
+      border-radius: 0.2rem;
+  }
+  .img-userProductos{
+    position: relative;
+    top: 40px;
+    right: 100px;
+  }
+  .img-carritoProductos{
+    position: relative;
+    top: 40px;
+    right: 80px;
+  }
+
+  /* main .tamanio{
+    height: 1690px;
+  } */
+  .productos div{
+    margin: 1%;
+    padding-top: 10px;
+    width: 23%;
+    
+  }
+  .productos div a h3{
+    margin-top: 3px;
+  }
+  .img-transitionFooter { 
+    transition: all 0.5s;
+  }
+  .img-transitionFooter:hover {
+    width: 60px;
+    height: 60px;
+  }
+  .productos div:hover{
+    transition: all 0.1s;
+    border: rgb(84, 84, 84, 0.6) solid;
+    border-radius: 1rem;
+  }
+}
+
+
+
