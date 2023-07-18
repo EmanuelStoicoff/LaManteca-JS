@@ -161,7 +161,7 @@ class Carrito{
             divProductosCarrito.innerHTML +=`
             <div class="d-flex justify-content-between border border-dark rounded ps-2 pe-2 pb-2 m-2">
               <div>
-                <img src="../img/productos/${producto.nombre}.jpg" alt="${producto.nombre}" class="mt-2">
+                <img src="../img/productos/${producto.nombre}.jpg" alt="${producto.nombre}" class="mt-2 img-productos">
               </div> 
               <div class="d-flex flex-column justify-content-evenly"> 
                 <div class="nombreProducto">

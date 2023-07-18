@@ -163,6 +163,11 @@ main h1:hover, .h2Hover:hover {
   animation-duration: 2s;
   animation-delay: 1s;
 }
+.resumenCarrito{
+  border: solid black;
+  border-radius: 0.5rem;
+  height: 200px;
+}
 
 @media only screen and (max-width: 600px) {
   .productos div{
